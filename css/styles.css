@@ -1,0 +1,19 @@
+* {
+    /* border: 1px solid coral; */
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.default-padding{
+    /*Padding removed in body, and reinserted as necessary*/
+    padding: 8px;
+}
+
+
+
+
+
+

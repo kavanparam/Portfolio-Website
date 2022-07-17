@@ -1,0 +1,41 @@
+
+.nav-section{
+    /* border: 1px solid red; */
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;  */
+    background-color: white;
+}
+
+.nav-logo{
+    color: #FF9100;
+    /* align-self: flex-end; */
+}
+
+.nav-section ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-section li{
+    padding: 10px 0;
+}
+
+
+nav a, a:visited{
+    text-decoration: none;
+    color: grey;
+}
+
+nav a:hover{
+    color: black;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+    /*Can you add padding between flex children?*/
+} 

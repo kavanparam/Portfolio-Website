@@ -1,0 +1,10 @@
+#store-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-gap: 15px; */
+    justify-items: center;
+}
+
+.store-grid-item{
+    background-color: whitesmoke;
+}
