@@ -1,0 +1,39 @@
+.photo-portfolio-section{
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    display: grid;
+    grid-template-rows: 1fr repeat(3, 4fr);
+    row-gap: 5px;
+
+    grid-auto-columns: max-content;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.photo-grid-item{
+    height: 300px;
+    /* padding: 8px; */
+    border: 2px solid black;
+    /* grid-column: auto; */
+}
+
+
+.photo-portfolio-section h1{
+    font-weight: lighter;
+    color: grey;
+}
+
+.photo-portfolio-section img{
+    height: 300px;
+}
+
+/* #photo-container-2, #photo-container-2 img{
+    height: 325px;
+} */
+
+/* Doesn't work. Tried to center items. */
+/* #photo-container-1{
+    justify-items: center;
+} */
+

@@ -2,31 +2,37 @@
 <html lang="en-CA">
 	<head>
 		<title>Store — kavanparam</title>
+        <link rel="icon" type="image/png" href="../images/cart_emoji.png">
         <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="../css/navbar.css">
         <link rel="stylesheet" href="../css/store.css">
+        <link rel="stylesheet" href="../css/navbar.css">
         <script src="https://kit.fontawesome.com/17623fe826.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+
+        <!-- Unfinished! Be sure to cross-ref with index to make sure elements/classes aren't missing. -->
+        <!-- Consider doing a "diffing" -->
         <div id="store-grid-container">
-            <section class="nav-section store-grid-item default-padding"> <!--Navbar style to use reused across pages-->
-                <h1 class="nav-logo">kavanparam.</h1>
-                <nav> <!--in column flexbox in first 1/3 of grid layout-->
-                    <ul>
-                        <li><a href="html/store.html">Store</a></li>
-                        <li><a href="html/about.html">About</a></li>
-                        <li><a href=#contact>Contact</a></li>
-                        <div class="nav-icons"> <!--Put this in a flexbox-->
-                            <li><a href="#instagram"><i class="fa-brands fa-instagram"></i></a></li> <!--Instagram-->
-                            <li><a href="#github"><i class="fa-brands fa-github"></i></a></li> <!--Github-->
-                            <li><a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li> <!--LinkedIn-->
-                        </div>
-                    </ul>
-                </nav>
+            <section class="nav-section store-grid-item default-padding">
+                <div class="navfix">
+                    <h1 class="nav-logo"><a href="../index.html">kavanparam.</a></h1>
+                    <nav>
+                        <ul>
+                            <li><a href="html/store.html">Store</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href=#contact>Contact</a></li>
+                            <div class="nav-icons">
+                                <li><a href="#instagram"><i class="fa-brands fa-instagram"></i></a></li> <!--Instagram-->
+                                <li><a href="#github"><i class="fa-brands fa-github"></i></a></li> <!--Github-->
+                                <li><a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li> <!--LinkedIn-->
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
             </section>
 
 
-            <div class="store-grid-item default-padding">
+            <div class="store-section store-grid-item default-padding">
                 <h1>Welcome to the store!</h1>
                 <p>My first paragraph.</p>
             </div>

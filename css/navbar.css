@@ -5,13 +5,23 @@
     /* display: flex;
     flex-direction: column;
     align-items: center;  */
+    /* display: flex; */
     background-color: white;
+
+
+    /* Testing if navtest can be removed and grid can be made around it */
+    /* position: fixed;
+    left: 65px; */
 }
 
-.nav-logo{
-    color: #FF9100;
-    /* align-self: flex-end; */
+.navfix{
+    /*Removed from the flow the document and had to specify position manually. 
+    Not the best solution best serviceable */
+    position: fixed;
+    left: 60px;
 }
+
+
 
 .nav-section ul{
     margin: 0;
@@ -24,12 +34,13 @@
 }
 
 
-nav a, a:visited{
+nav a:link, a:visited{
     text-decoration: none;
     color: grey;
 }
 
 nav a:hover{
+    text-decoration: none;
     color: black;
 }
 
@@ -39,3 +50,8 @@ nav a:hover{
     padding-right: 60px;
     /*Can you add padding between flex children?*/
 } 
+
+.nav-logo > a{
+    text-decoration: none;
+    color: #FF9100;
+}

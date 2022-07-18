@@ -2,49 +2,77 @@
 <html lang="en-CA">
 	<head>
 		<title>kavanparam</title>
+        <link rel="icon" type="image/png" href="images/code_emoji.png">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/portfolio.css"> <!--On main page for time being until separate software/photography portions are built-->
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/photo-portfolio.css"> <!--On main page for time being until separate software/photography portions are built-->
+        <link rel="stylesheet" href="css/software-portfolio.css"> <!--On main page for time being until separate software/photography portions are built-->
         <script src="https://kit.fontawesome.com/17623fe826.js" crossorigin="anonymous"></script> <!--FontAwesome webkit-->
 	</head>
 	<body>
-        <header class="default-padding">
+        <!-- <header class="default-padding">
             <p>Might want to include something here if matching the French flag layout</p>
-        </header>
+        </header> -->
 
-        <div id="main-grid-container"> <!--Main bc it's on the main page. Call the Store grid, store-grid-container for e.g.-->
-            <section id="nav-grid" class="nav-section main-grid-item default-padding"> <!--Navbar style to use reused across pages-->
-                <h1 class="nav-logo">kavanparam.</h1>
-                <nav> <!--in column flexbox in first 1/3 of grid layout-->
-                    <ul>
-                        <li><a href="html/store.html">Store</a></li>
-                        <li><a href="html/about.html">About</a></li>
-                        <li><a href=#contact>Contact</a></li>
-                        <div class="nav-icons"> <!--Put this in a flexbox-->
-                            <li><a href="#instagram"><i class="fa-brands fa-instagram"></i></a></li> <!--Instagram-->
-                            <li><a href="#github"><i class="fa-brands fa-github"></i></a></li> <!--Github-->
-                            <li><a href="#linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li> <!--LinkedIn-->
-                        </div>
-                    </ul>
-                </nav>
+        <div id="main-grid-container">
+            <section class="nav-section main-grid-item default-padding">
+                <div class="navfix">
+                    <h1 class="nav-logo"><a href="index.html">kavanparam.</a></h1>
+                    <nav>
+                        <ul>
+                            <li><a href="html/store.html">Store</a></li>
+                            <li><a href="html/about.html">About</a></li>
+                            <li><a href=#contact>Contact</a></li>
+                            <div class="nav-icons"> <!--Put this in a flexbox-->
+                                <li><a href="https://www.instagram.com/kaavan/"><i class="fa-brands fa-instagram"></i></a></li> <!--Instagram-->
+                                <li><a href="https://github.com/kavanparam"><i class="fa-brands fa-github"></i></a></li> <!--Github-->
+                                <li><a href="https://www.linkedin.com/in/kavanparam"><i class="fa-brands fa-linkedin-in"></i></a></li> <!--LinkedIn-->
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
             </section>
 
-            <section class="portfolio-section main-grid-item default-padding">
-                <h2>Main portfolio content goes here</h2>
+            <section class="photo-portfolio-section main-grid-item default-padding">
+                <!-- Main portfolio content goes here -->
+                <h1>Photography Portfolio</h1>
+                <div class="photo-grid-item">
+                    <!-- Landscapes -->
+                    <img src="images/photos/IMG_7388-2.jpg">
+                    <img src="images/photos/IMG_5933-2.jpg">
+                    <img src="images/photos/IMG_7721.jpg">
+                    <img src="images/photos/IMG_7907.jpg">
+                </div>
+                <div class="photo-grid-item">
+                    <!-- Portraits -->
+                    <img src="images/photos/IMG_8058.jpg">
+                    <img src="images/photos/IMG_0111-2.jpg">
+                    <img src="images/photos/IMG_0693.jpg">
+                    <img src="images/photos/IMG_8685-5.jpg">
+                </div>
+                <div class="photo-grid-item">
+                    <!-- Toronto -->
+                    <img src="images/photos/IMG_2443-2.jpg">
+                    <img src="images/photos/IMG_8130-4.jpg">
+                    <img src="images/photos/IMG_8186.jpg">
+                    <img src="images/photos/IMG_7404-2.jpg">
+                </div>
             </section>
 
-            <!-- Removed for the time being. Add back later if content can go here -->
-            <!-- <section class="main-grid-item default-padding">
-                <h3>Some extra content goes here</h3>
-                <p>Can also disregard this section as the point of this assignment is just to use the grid layout.
-                    Not to follow a specific layout.
-                </p>
-            </section> -->
+            <section class="software-portfolio-section main-grid-item default-padding">
+                <h1>Software Portfolio</h1>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </section>
+
         </div>
 
         <footer class="default-padding">
-            <p>And add something here with Author information, links, etc.</p> 
+            <!-- <p><em>And add something here with Author information, links, etc.</em></p>  -->
+            <br><br><br>
         </footer>
+
 	</body>
 </html>
