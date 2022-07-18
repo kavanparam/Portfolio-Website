@@ -2,35 +2,32 @@
     grid-row-start: 1;
     grid-column-start: 2;
 
+    /* Subgrid containing portfolio heading and its content */
     display: grid;
-    grid-template-rows: 1fr repeat(3, 4fr);
+    grid-template-rows: 60px repeat(3, auto);
     row-gap: 5px;
-
-    grid-auto-columns: max-content;
-    width: 100%;
-    overflow-x: auto;
 }
-
-.photo-grid-item{
-    height: 300px;
-    /* padding: 8px; */
-    /* border: 2px solid black; */
-    /* grid-column: auto; */
-}
-
 
 .photo-portfolio-section h1{
-    font-weight: lighter;
+    font-weight: 200;
     color: grey;
 }
 
-.photo-portfolio-section img{
-    height: 300px;
+.photo-grid-item{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
-/* #photo-container-2, #photo-container-2 img{
-    height: 325px;
-} */
+.photo-grid-item img{
+    height: 300px;
+    width: auto;
+    margin: 0;
+}
+
+#photo-grid-port img{
+    height: 350px;
+}
 
 /* Doesn't work. Tried to center items. */
 /* #photo-container-1{

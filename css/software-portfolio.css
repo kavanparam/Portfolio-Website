@@ -1,7 +1,9 @@
 .software-portfolio-section{
     grid-row-start: 2;
     grid-column-start: 2;
+
     display: grid;
+    grid-template-rows: 60px repeat(3, 4fr);
     row-gap: 15px;
 }
 
@@ -11,6 +13,6 @@
 }
 
 .software-portfolio-section h1{
-    font-weight: lighter;
+    font-weight: 200;
     color: grey;
 }
