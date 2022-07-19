@@ -21,7 +21,14 @@
     left: 60px;
 }
 
+.nav-logo h1{
+    color: #FF9100;
+    font-weight: 600;
+}
 
+.nav-logo > a{
+    text-decoration: none;
+}
 
 .nav-section ul{
     margin: 0;
@@ -47,11 +54,8 @@ nav a:hover{
 .nav-icons{
     display: flex;
     justify-content: space-between;
-    padding-right: 60px;
+    padding-right: 70px;
     /*Can you add padding between flex children?*/
 } 
 
-.nav-logo > a{
-    text-decoration: none;
-    color: #FF9100;
-}
+

@@ -3,16 +3,15 @@
     grid-column-start: 2;
 
     display: grid;
-    grid-template-rows: 60px repeat(3, 4fr);
-    row-gap: 15px;
+    grid-template-rows: 55px repeat(3, auto);
+    row-gap: 5px;
 }
 
 .software-portfolio-section div{
-    padding: 125px;
-    border: 2px solid red;
+    padding: 150px;
+    background-color: brown;
 }
 
-.software-portfolio-section h1{
-    font-weight: 200;
-    color: grey;
+.software-grid-item{
+
 }

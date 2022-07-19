@@ -2,16 +2,18 @@
     padding-right: 60px;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    /* background-color: bisque; */
 
     /* Contains photo & software portfolio */
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
 }
 
-.main-grid-item{
-    /* background-color: whitesmoke; */
-}
+/* .main-grid-item{
+    background-color: whitesmoke;
+} */
 
-.main-grid-item:nth-child(1) {
+/*Why doesn't an ID work here? Is any other syntax possible?*/
+/* Not required after navbar removed from grid with position: fixed */
+/* .main-grid-item:nth-child(1){
     justify-self: center;
-} /*Why doesn't an ID work here? Is any other syntax possible?*/
+}  */
+

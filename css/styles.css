@@ -11,3 +11,8 @@ body{
     /*Padding removed in body, and reinserted as necessary*/
     padding: 8px;
 }
+
+h1{
+    font-weight: 200;
+    color: grey;
+}
