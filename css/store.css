@@ -36,18 +36,18 @@ default-padding might be the reason why */
 
 .store-item{
     padding: 50px;
-    background-color: brown;
+    background-color: #fafaf7;
 }
 
 .store-item h2{
     font-weight: 600;
     font-size: large;
-    color: whitesmoke;
+    color: rgba(0, 0, 0, 0.6);
     text-align: center;
     padding-bottom: 10px;
     /* text-align: center; */
 }
 
 .store-item p{
-    color: whitesmoke;
+    color: rgba(0, 0, 0, 0.8);
 }

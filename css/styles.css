@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: system-ui, 'Segoe UI', sans-serif;
 }
 
 .default-padding{
@@ -13,6 +13,7 @@ body{
 }
 
 h1{
+    display: inline-block;
     font-weight: 200;
     color: grey;
 }
