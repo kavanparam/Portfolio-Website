@@ -14,6 +14,14 @@ body{
 
 h1{
     display: inline-block;
+    font-size: x-large;
+    font-weight: 200;
+    color: grey;
+}
+
+h2{
+    display: inline-block;
+    font-size: large;
     font-weight: 200;
     color: grey;
 }
