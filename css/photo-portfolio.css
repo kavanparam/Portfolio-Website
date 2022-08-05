@@ -12,13 +12,13 @@
 }
 
 .photo-grid-item img{
-    height: 250px;
+    height: 300px;
     width: auto;
     margin: 0;
 }
 
 #photo-grid-port img{
-    /* height: 350px; */
+    height: 350px;
 }
 
 /* Doesn't work. Tried to center items. */

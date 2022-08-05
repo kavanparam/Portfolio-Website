@@ -11,29 +11,28 @@
         <script src="https://kit.fontawesome.com/17623fe826.js" crossorigin="anonymous"></script> <!--FontAwesome webkit-->
 	</head>
 	<body>
-        <!-- <header class="default-padding">
-            <p>Might want to include something here if matching the French flag layout</p>
-        </header> -->
+        <div id="main-grid-container">  
+        
+        
+        <header class="nav-section main-grid-item">
+            <div class="navfix">
+                <div class="nav-logo"><a href="index.html"><h1>kavanparam.</h1></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="html/store.html">Store</a></li>
+                        <li><a href="html/about.html">About</a></li>
+                        <li><a href=#contact>Contact</a></li>
+                        <div class="nav-icons">
+                            <li><a href="https://www.instagram.com/kaavan/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://github.com/kavanparam" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/kavanparam" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <div id="main-grid-container">
-
-            <section class="nav-section main-grid-item">
-                <div class="navfix">
-                    <div class="nav-logo"><a href="index.html"><h1>kavanparam</h1></a></div>
-                    <nav>
-                        <ul>
-                            <li><a href="html/store.html">Store</a></li>
-                            <li><a href="html/about.html">About</a></li>
-                            <li><a href=#contact>Contact</a></li>
-                            <div class="nav-icons">
-                                <li><a href="https://www.instagram.com/kaavan/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="https://github.com/kavanparam" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/kavanparam" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            </div>
-                        </ul>
-                    </nav>
-                </div>
-            </section>
+            
             
             <details>
                 <summary><h1>photography</h1></summary>
@@ -65,22 +64,43 @@
 
             <section class="software-portfolio-section main-grid-item">
                 <h1>software</h1>
-                <div class="software-grid-item">
-                    <details>
-                        <summary>what I'm currently working on</summary>
-                        <p>Add projects pulled using Git's API here</p>
-                        <ol>
-                            <li>Project 1</li>
-                            <li>Project 2</li>
-                            <li>Project 3</li>
-                        </ol>
-                    </details>
+
+                    <div class="software-outer">
+                        <div id="current-projects" class="software-grid-item">
+                            <details>
+                                <summary><h3>what I'm currently working on</h3></summary>
+                                <p>Add projects pulled using Git's API here</p>
+                                <ol>
+                                    <li>Project 1</li>
+                                    <li>Project 2</li>
+                                    <li>Project 3</li>
+                                </ol>
+                            </details>
+                        </div>
+                    </div>
+
+                <h2 class="completed-projects">completed projects
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <path d="M10.25 5.75s-2.385 2.54-3 4.5l-1.5-1.5m8.5-.75a6.25 6.25 0 1 1-12.5 0 6.25 6.25 0 0 1 12.5 0Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </h2>
+                
+                <div class="software-outer">
+                    <div class="software-grid-item"><h3>Pokedex App</h3></div>
                 </div>
-                <h2>completed projects</h2>
-                <div class="software-grid-item">Pokedex App</div>
-                <div class="software-grid-item">Portfolio Website</div>
-                <div class="software-grid-item">HTML blog</div>
-                <div class="software-grid-item">Bookstore App with Java & JavaFX</div>
+                <div class="software-outer">
+                    <div class="software-grid-item"><h3>Portfolio Website</h3></div>
+                </div>
+                <div class="software-outer">
+                    <div class="software-grid-item"><h3>Fitness Course</h3></div>
+                </div>
+                <div class="software-outer">
+                    <div class="software-grid-item"><h3>HTML blog</h3></div>
+                </div>
+                <div class="software-outer">
+                    <div class="software-grid-item"><h3>Bookstore App</h3><p>with Java & JavaFX</p></div>
+                </div>
             </section>
 
         </div>

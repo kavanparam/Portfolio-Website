@@ -5,6 +5,7 @@
 body{
     margin: 0;
     font-family: system-ui, 'Segoe UI', sans-serif;
+    background: #05010d;
 }
 
 .default-padding{
@@ -16,12 +17,26 @@ h1{
     display: inline-block;
     font-size: x-large;
     font-weight: 200;
-    color: grey;
+    /* color: grey; */
+    color: rgba(255, 255, 255, 0.8);
 }
 
 h2{
     display: inline-block;
     font-size: large;
     font-weight: 200;
-    color: grey;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+h3{
+    display: inline-block;
+    font-size: medium;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+details > summary{
+    font-size: medium;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
 }
