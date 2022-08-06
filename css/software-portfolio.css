@@ -4,14 +4,18 @@
 
     display: grid;
     grid-template-rows: 55px repeat(3, auto);
-    row-gap: 5px;
+    row-gap: 10px;
 }
 
 #current-projects{
     background: rgba(0,0,0,.9);
+    color: rgba(255,238,247,.8);
 }
 
-.completed-projects{
+.current-projects-outer{
+    padding: 3px;
+    background: linear-gradient(90.56deg,#27061a,#ff6363 29.69%,#9b4dff 52.6%,#100321 100%);
+    border-radius: 12px;
 }
 
 .completed-projects > svg{
@@ -21,18 +25,29 @@
 }
 
 .software-outer{
-    padding: 2px;
-    background: linear-gradient(90.56deg,#27061a,#ff6363 29.69%,#9b4dff 52.6%,#100321 100%);
+    padding: 1px;
+    /* background: linear-gradient(90.56deg,#27061a,#ff6363 29.69%,#9b4dff 52.6%,#100321 100%); */
+    /* background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%); */
+
+
+
+background: rgb(50,77,79);
+background: linear-gradient(209deg, rgba(50,77,79,1) 14%, rgba(231,0,0,1) 77%, rgba(203,0,0,1) 100%);
     border-radius: 12px;
 }
 
 .software-grid-item{
     color: white;
     padding: 100px;
-    border: 1px solid hsla(0,0%,100%,.1);
-    background: rgba(0,0,0,.8);
+    /* border: 1px solid hsla(0,0%,100%,.1); */
+    background: rgba(0,0,0,0.2);
     border-radius: 12px;
+
+    /* display: flex;
+    align-items: center; */
 }
+
+
 
 
 /* Gradient & border radius for rounded corners -- OUTSIDE */
@@ -47,5 +62,31 @@ border: 1pxsolidhsla(0,0%,100%,.1);
 background: rgba(0,0,0,.8);
 border-radius: 12px; */
 
-/* Main heading is white */
-/* Sub-text inside: color: rgba(255,238,247,.8); */
+
+.software-grid-item > h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* https://www.joshwcomeau.com/gradient-generator?colors=66002c|ffea00&angle=315&colorMode=hcl&precision=2&easingCurve=0.9678899082568807|0.9935493119266054|-0.05|0.016485091743119264 */
+.divPokemon{
+    background-image: linear-gradient(
+    315deg,
+    hsl(334deg 100% 20%) 1%,
+    hsl(6deg 58% 45%) 47%,
+    hsl(33deg 87% 52%) 48%,
+    hsl(55deg 100% 50%) 100%
+);
+}
+
+/* Main heading: */
+/* font-size: 20px;
+font-weight: 600;
+line-height: 27px; */
+
+/* Sub-text inside*/ 
+/*  margin: 8px 0 0;
+    font-size: 16px;
+    line-height: 24px; 
+    color: rgba(255,238,247,.8);
+    */
