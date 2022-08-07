@@ -1,8 +1,15 @@
+#photography-toggle{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
 #photo-portfolio-section{
     /* Subgrid containing portfolio heading and content */
     display: grid;
-    grid-template-rows: repeat(3, auto);
-    row-gap: 5px;
+    /* grid-template-rows: repeat(3, auto); */
+    row-gap: 10px;
 }
 
 .photo-grid-item{

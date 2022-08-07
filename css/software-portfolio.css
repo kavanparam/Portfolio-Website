@@ -1,9 +1,16 @@
+#projects-toggle{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
 .software-portfolio-section{
-    grid-row-start: 2;
-    grid-column-start: 2;
+    /* grid-row-start: 2;
+    grid-column-start: 2; */
 
     display: grid;
-    grid-template-rows: 55px repeat(3, auto);
+    /* grid-template-rows: 55px repeat(auto, auto); */
     row-gap: 10px;
 }
 
@@ -12,16 +19,30 @@
     color: rgba(255,238,247,.8);
 }
 
+#current-projects > details{
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+}
+
 .current-projects-outer{
     padding: 3px;
     background: linear-gradient(90.56deg,#27061a,#ff6363 29.69%,#9b4dff 52.6%,#100321 100%);
     border-radius: 12px;
 }
 
-.completed-projects > svg{
+
+
+#git-project-list > li{
+    padding: 50px 0;
+
+}
+
+
+.completed-projects > h2 > svg{
     color: #59d499;
-    height: 18px;
-    width: 18px;
+    height: 25px;
+    width: 25px;
 }
 
 .software-outer{
@@ -30,15 +51,14 @@
     /* background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%); */
 
 
-
-background: rgb(50,77,79);
-background: linear-gradient(209deg, rgba(50,77,79,1) 14%, rgba(231,0,0,1) 77%, rgba(203,0,0,1) 100%);
+    background: rgb(50,77,79);
+    background: linear-gradient(209deg, rgba(50,77,79,1) 14%, rgba(231,0,0,1) 77%, rgba(203,0,0,1) 100%);
     border-radius: 12px;
 }
 
 .software-grid-item{
     color: white;
-    padding: 100px;
+    padding: 25px;
     /* border: 1px solid hsla(0,0%,100%,.1); */
     background: rgba(0,0,0,0.2);
     border-radius: 12px;

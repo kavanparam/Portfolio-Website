@@ -8,6 +8,10 @@
     /* grid-template-rows: 1fr 1fr; */
 }
 
+#software{
+    grid-column-start: 2;
+}
+
 /* .main-grid-item{
     background-color: whitesmoke;
 } */

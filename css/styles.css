@@ -8,7 +8,16 @@ body{
     margin: 0;
     font-family: Inter, system-ui, 'Segoe UI', sans-serif;
     background: #05010d;
+
+
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
 }
+
+/* ol{
+    padding: 0;
+} */
 
 .default-padding{
     /*Padding removed in body, and reinserted as necessary*/
@@ -32,8 +41,8 @@ h2{
 
 h3{
     display: inline-block;
-    font-size: medium;
-    font-weight: 200;
+    font-size: large;
+    font-weight: 500;
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -43,3 +52,7 @@ details > summary{
     cursor: pointer;
     color: rgba(255, 255, 255, 0.5);
 }
+
+
+
+

@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="en-CA">
+
 	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<title>kavanparam</title>
         <link rel="icon" type="image/png" href="images/wave_emoji.png">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/photo-portfolio.css"> <!--On main page until separate software/photography portions are built-->
+        <link rel="stylesheet" href="css/photo-portfolio.css">  <!--On main page until separate software/photography portions are built-->
         <link rel="stylesheet" href="css/software-portfolio.css"> 
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/tooltip.css">
+
         <script src="https://kit.fontawesome.com/17623fe826.js" crossorigin="anonymous"></script> <!--FontAwesome webkit-->
+        <script src="scripts/getRecentGitRepos.js"></script>
+        <script src="scripts/popup.js"></script>
 	</head>
-	<body>
+
+	<body onload="getRecentRepos()">
+    <!-- <body> -->
+
         <div id="main-grid-container">  
         
-        
-        <header class="nav-section main-grid-item">
-            <div class="navfix">
-                <div class="nav-logo"><a href="index.html"><h1>kavanparam.</h1></a></div>
-                <nav>
-                    <ul>
-                        <li><a href="html/store.html">Store</a></li>
-                        <li><a href="html/about.html">About</a></li>
-                        <li><a href=#contact>Contact</a></li>
-                        <div class="nav-icons">
-                            <li><a href="https://www.instagram.com/kaavan/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="https://github.com/kavanparam" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/kavanparam" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        </div>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+            <header class="nav-section main-grid-item">
+                <div class="navfix">
+                    <div class="nav-logo"><a href="index.html"><h1>kavanparam.</h1></a></div>
+                    <nav>
+                        <ul>
+                            <li><a class="tooltip" href="html/store.html">Store
+                                    <span class="tooltiptext">Store page exists as mockup</span>
+                                </a>
+                            </li>
 
-            
+                            <li><a class="popup" onclick="popup()" href=#about>About
+                                <span class="popuptext" id="myPopup">
+                                    Under construction 🚧<br>
+                                    <sub>Click to dismiss.</sub>
+                                </span>
+                                </a>
+                            </li>
+
+                            <li><a class="popup" onclick="popup()" href=#contact>Contact
+                                <span class="popuptext" id="myPopup">
+                                    Under construction 🚧<br>
+                                    <sub>Click to dismiss.</sub>
+                                </a>
+                            </li>
+
+                            <div class="nav-icons">
+                                <li><a href="https://www.instagram.com/kaavan/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/kavanparam" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/kavanparam" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </div>
+
+                        </ul>
+                    </nav>
+                </div>
+            </header>
             
             <details>
-                <summary><h1>photography</h1></summary>
+                <summary id="photography-toggle"><h1>photography</h1></summary>
                 <section id="photo-portfolio-section" class="main-grid-item">
                     <div class="photo-grid-item">
                         <!-- Landscapes -->
@@ -62,69 +90,78 @@
                 </section>
             </details>
 
-            <section class="software-portfolio-section main-grid-item">
-                <h1>software</h1>
+            <details open id="software">
+                <summary><h1>software</h1></summary>
+                <section class="software-portfolio-section main-grid-item">
 
-                    <div class="current-projects-outer">
-                        <div id="current-projects" class=" software-grid-item">
-                            <details open>
-                                <summary><h3>what I'm currently working on</h3></summary>
-                                <p>Add projects pulled using Git's API here</p>
-                                <ol>
-                                    <li>Project 1</li>
-                                    <li>Project 2</li>
-                                    <li>Project 3</li>
-                                </ol>
-                            </details>
+                        <div class="current-projects-outer">
+                            <div id="current-projects" class=" software-grid-item">
+                                <details open>
+
+                                    <summary id="projects-toggle"><h3>what I'm working on</h3></summary>
+                                    <ol id="git-project-list">
+                                        <li>Project 1</li>
+                                        <li>Project 2</li>
+                                        <li>Project 3</li>
+                                    </ol>
+
+                                </details>
+                            </div>
                         </div>
-                    </div>
+                        
+                    
+                    <div class="completed-projects">
+                        
+                        <h2>completed projects
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                                <path d="M10.25 5.75s-2.385 2.54-3 4.5l-1.5-1.5m8.5-.75a6.25 6.25 0 1 1-12.5 0 6.25 6.25 0 0 1 12.5 0Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </h2>
 
-                <h2 class="completed-projects">completed projects
-                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
-                        <path d="M10.25 5.75s-2.385 2.54-3 4.5l-1.5-1.5m8.5-.75a6.25 6.25 0 1 1-12.5 0 6.25 6.25 0 0 1 12.5 0Z"
-                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </h2>
-                
-                <!-- Alternate styling instead of gradient divs -->
-                <!-- <h1 style="text-align: center; font-size: xx-large;">Pokedex App</h1> -->
+                        <!-- Alternate styling instead of gradient divs -->
+                        <!-- <h1 style="text-align: center; font-size: xx-large;">Pokedex App</h1> -->
+                        <div class="divPokemon software-outer">
+                            <div class="software-grid-item">
+                                <h4>Pokedex App</h4>
+                            </div>
+                        </div>
 
-                <div class="divPokemon software-outer">
-                    <div class="software-grid-item">
-                        <h4>Pokedex App</h4>
-                    </div>
-                </div>
-                <div class="software-outer">
-                    <div class="software-grid-item">
-                        <h4>Portfolio Website</h4>
-                    </div>
-                </div>
-                <div class="software-outer">
-                    <div class="software-grid-item">
-                        <h4>Fitness Course</h4>
-                    </div>
-                </div>
-                <div class="software-outer">
-                    <div class="software-grid-item">
-                        <h4>HTML blog</h4>
-                    </div>
-                </div>
-                <div class="software-outer">
-                    <div class="software-grid-item">
-                        <h4>Bookstore App</h4>
-                        <p>with Java & JavaFX</p>
-                    </div>
-                </div>
-            </section>
+                        <div class="software-outer">
+                            <div class="software-grid-item">
+                                <h4>Portfolio Website</h4>
+                            </div>
+                        </div>
 
+                        <div class="software-outer">
+                            <div class="software-grid-item">
+                                <h4>Fitness Course</h4>
+                            </div>
+                        </div>
 
+                        <div class="software-outer">
+                            <div class="software-grid-item">
+                                <h4>HTML blog</h4>
+                            </div>
+                        </div>
+
+                        <div class="software-outer">
+                            <div class="software-grid-item">
+                                <h4>Bookstore App</h4>
+                                <p>with Java & JavaFX</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+            </details>
+
+        </div>
 
         <footer class="default-padding">
             <!-- <p><em>And add something here with Author information, links, etc.</em></p>  -->
             <br><br><br>
         </footer>
-
-
 
 	</body>
 </html>
