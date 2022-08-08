@@ -14,9 +14,15 @@
     row-gap: 10px;
 }
 
+.projects-grid{
+    display: grid;
+    row-gap: 25px;
+}
+
 #current-projects{
     background: rgba(0,0,0,.9);
     color: rgba(255,238,247,.8);
+    padding: 10px;
 }
 
 #current-projects > details{
@@ -34,15 +40,11 @@
 
 
 #git-project-list > li{
-    padding: 50px 0;
-
+    padding: 1rem 0;
 }
 
-
-.completed-projects > h2 > svg{
-    color: #59d499;
-    height: 25px;
-    width: 25px;
+#git-project-list > li:first-child{
+    padding-top: 0;
 }
 
 .software-outer{
@@ -58,7 +60,7 @@
 
 .software-grid-item{
     color: white;
-    padding: 25px;
+    padding: 50px;
     /* border: 1px solid hsla(0,0%,100%,.1); */
     background: rgba(0,0,0,0.2);
     border-radius: 12px;
@@ -67,26 +69,27 @@
     align-items: center; */
 }
 
+.softwareIcon{
+    display: grid;
+    place-items: center;
 
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    background: radial-gradient(100% 100% at 50% 0,hsla(0,0%,100%,.3) 0,hsla(0,0%,100%,0) 100%),hsla(0,0%,100%,.15);
 
+    height: 45px;
+    width: 45px;
 
-/* Gradient & border radius for rounded corners -- OUTSIDE */
-/* background: linear-gradient(90.56deg,#27061a,#ff6363 29.69%,#9b4dff 52.6%,#100321 98.44%);
-border-radius: 12px; */
+    border-radius: 8px;
+}
 
-/* INSIDE */
-/* display: flex;
-align-items: center;
-padding: 20px 24px;
-border: 1pxsolidhsla(0,0%,100%,.1);
-background: rgba(0,0,0,.8);
-border-radius: 12px; */
+.softwareIcon > img{
+    height: 40px;
+}
 
-
-.software-grid-item > h4{
+/* .software-grid-item > h4{
     font-size: 20px;
     font-weight: 500;
-}
+} */
 
 /* https://www.joshwcomeau.com/gradient-generator?colors=66002c|ffea00&angle=315&colorMode=hcl&precision=2&easingCurve=0.9678899082568807|0.9935493119266054|-0.05|0.016485091743119264 */
 .divPokemon{
