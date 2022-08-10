@@ -38,6 +38,8 @@
 }
 
 
+#git-project-list{
+}
 
 #git-project-list > li{
     padding: 1rem 0;
@@ -64,6 +66,13 @@
 #git-project-list > li > ul{
     padding: 0;
 }
+
+
+#fix-this{
+    width: 60%;
+    overflow: auto;
+}
+
 
 .software-outer{
     padding: 1px;

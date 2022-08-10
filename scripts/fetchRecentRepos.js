@@ -19,7 +19,8 @@ function fetchCommitData (repo) {
     .then(res => res.json())
     .then(obj => {
         console.log(obj[0].commit.message);
-        const commitMsg = obj[0].commit.message.replace(/</g, '&#60');
+        let commitMsg = obj[0].commit.message.replace(/</g, '&#60');
+        
         return commitMsg;
     });
 }
@@ -41,7 +42,7 @@ function displayRepos(repo, commitMsg){
     return [                        
         `<li><ul><dl><dt>${repo.name}</dt><dd><p>Description: ${repo.description}</p></dd>`
             +`<dd>Last Commit: ${repo.pushed_at}</dd>`
-            +`<dd>Last Commit Details: <pre>${commitMsg}</pre></dd>`
+            +`<dd>Last Commit Details: <pre id="fix-this">${commitMsg}</pre></dd>`
             +`<dd>Create Date: ${repo.created_at}</dd></dl></ul></li>`
     ];
 }
