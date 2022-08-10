@@ -38,10 +38,10 @@ async function displayProjects(obj){
 
 function displayRepos(repo, commitMsg){
     return [                        
-        `<li><dl><dt>${repo.name}</dt><dd><p>Description: ${repo.description}</p></dd>`
+        `<li><ul><dl><dt>${repo.name}</dt><dd><p>Description: ${repo.description}</p></dd>`
             +`<dd>Last Commit: ${repo.pushed_at}</dd>`
             +`<dd>Last Commit Details: ${commitMsg}</dd>`
-            +`<dd>Create Date: ${repo.created_at}</dd></dl></li>`
+            +`<dd>Create Date: ${repo.created_at}</dd></dl></ul></li>`
     ];
 }
 

@@ -22,7 +22,7 @@
 #current-projects{
     background: rgba(0,0,0,.9);
     color: rgba(255,238,247,.8);
-    padding: 10px;
+    padding: 2rem;
 }
 
 #current-projects > details{
@@ -51,8 +51,18 @@
     display: inline;
 }
 
+#git-project-list dl{
+    margin: 0;
+}
+
 #git-project-list dd{
+    display: list-item;
+    list-style-type: disc;
     font-size: .9em;
+}
+
+#git-project-list > li > ul{
+    padding: 0;
 }
 
 .software-outer{

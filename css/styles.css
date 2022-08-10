@@ -71,8 +71,3 @@ summary:before{
     content: "";
     padding-right: 0.1rem;
 }
-
-dd {
-    display: list-item;
-    list-style-type: disc;
-}
