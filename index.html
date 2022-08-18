@@ -22,7 +22,6 @@
 	</head>
 
 	<body onload="fetchRecentRepos()">
-    <!-- <body> -->
 
         <div id="main-grid-container">  
         
@@ -97,12 +96,22 @@
                     <div class="current-projects-outer">
                         <div id="current-projects" class=" software-grid-item">
                             
-                            <h3>what I'm working on</h3>
-                            <ol id="git-project-list">
-                                <!-- <li>Project 1</li>
-                                <li>Project 2</li>
-                                <li>Project 3</li> -->
-                            </ol>
+                            <details open>
+
+                                <summary>
+                                    <span class="current-projects-flex">
+                                        <h3>what I'm working on</h3>
+                                        <a class="current-projects-callout" href="https://docs.github.com/en/rest/repos/repos#list-repositories-for-a-user" target="_blank">
+                                            💡 This information was fetched using <br><u>GitHub's RESTful API</u> & JS promises
+                                        </a>
+                                </summary>
+
+                                <ol id="git-project-list">
+                                    <!-- <li>Project 1</li>
+                                    <li>Project 2</li>
+                                    <li>Project 3</li> -->
+                                </ol>
+                            </details>
 
                         </div>
                     </div>

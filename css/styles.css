@@ -71,3 +71,13 @@ summary:before{
     content: "";
     padding-right: 0.1rem;
 }
+
+a:link, a:visited{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}

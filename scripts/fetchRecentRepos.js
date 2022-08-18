@@ -38,14 +38,23 @@ async function displayProjects(obj){
    
 }
 
+
 function displayRepos(repo, commitMsg){
     return [                        
-        `<li><ul><dl><dt>${repo.name}</dt><dd><p>Description: ${repo.description}</p></dd>`
+        `<li><ul><dl><dt><h4>${repo.name}</h4></dt><dd><p>Description: ${repo.description}</p></dd>`
             +`<dd>Last Commit: ${repo.pushed_at}</dd>`
             +`<dd>Last Commit Details: <pre id="fix-this">${commitMsg}</pre></dd>`
-            +`<dd>Create Date: ${repo.created_at}</dd></dl></ul></li>`
+            +`<dd>Create Date: ${repo.created_at}</dd>`
+            +`${displayRepoLink(repo)}</dl></ul></li>`
     ];
 }
+
+
+const displayRepoLink = repo => (
+    //Add link to project if it exists otherwise return empty string
+    (repo.homepage ? `<dd><i class="fa-solid fa-link" style="padding-right: .5rem;"></i>`
+        +`<a href="${repo.homepage}" target="_blank">${repo.homepage.replace("https://", "")}</a></dd>` : "")
+)
 
 
 
