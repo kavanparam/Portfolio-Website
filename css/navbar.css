@@ -3,42 +3,16 @@
 - Use kp as logo until hovered, then expand and display kavanparam. Along with full sidebar contents.
 */
 
+/* Use a 2x2 grid for social links at the bottom that turn into a fexbox when hovered. */
+/* Replace tooltips. Use Fireship.io as inspo. */
 
-
-
-
-.nav-section{
-    /* border: 1px solid red; */
-
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;  */
-    /* display: flex; */
-    /* background-color: white; */
-
-
-    /* Testing if navtest can be removed and grid can be made around it */
-    /* position: fixed;
-    left: 65px; */
-
-}
-
-.navfix{
-    /*Removed from the flow the document and had to specify position manually. 
-    Not the best solution best serviceable */
-    
-    /* left: 60px; */
-    /* padding-left: 1rem; */
-}
 
 .navbar{
-    width: 10rem;
-    height: 100vh;
     position: fixed;
-
-    background-color: hsla(260, 86%, 3%, 0.2);
-    /* padding-left: 1em; */
+    background-color: hsla(260, 86%, 3%, 0.8);
     overflow: scroll;
+
+    transition: width 300ms ease;
 }
 
 .navbar-nav{
@@ -52,13 +26,23 @@
     height: 100%;
 }
 
-.nav-logo > a > h1{
-    color: rgba(255, 145, 0, 0.9);
-    font-size: 1.6em;
-    font-weight: 400;
-    /* letter-spacing: -0.05em; */
-    margin: 0;
-    padding: 1rem 0;
+.nav-logo i{
+    padding-left: 0.5rem;
+}
+
+.logo-text{
+    text-transform: uppercase;
+    text-align: center;
+    /* font-style: italic; */
+    color: var(--inactive-link);
+    font-size: 1.75em;
+    font-weight: 600;
+    letter-spacing: 0.1ch;
+}
+
+.logo-text:hover{
+    color: rgb(255, 145, 0.9);
+    transition: color 600ms;
 }
 
 .nav-item{
@@ -69,23 +53,104 @@ nav li{
     padding: 1rem 0;
 }
 
+.nav-item:nth-child(2){
+    padding-top: 0;
+}
+
 .nav-item:last-child{
     margin-top: auto;
 }
 
 .nav-link{
+    --inactive-link: hsl(0, 0%, 50%);
+
     display: flex;
     align-items: center;
-    height: 2rem;
+    height: 5rem;
+    --link-transition: 600ms;
+}
+
+.nav-link i{
+    min-width: 1.5rem;
+    font-size: 2em;
+    margin: 0 2rem;
+}
+
+.link-text{
+    display: none;
+    /* margin-left: 0.5rem; */
+}
+
+.nav-icons{
+    --inactive-link: hsl(0, 0%, 50%);
+
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+} 
+
+
+
+
+
+
+
+/* .nav-logo i{
+    transform: rotate(0deg);
+    transition: transform 200ms;
+} */
+
+
+/* Small screens */
+@media only screen and (max-width: 600px){
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 6rem;
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    main{
+        margin: 0;
+    }
+
+    .logo-text{
+        display: none;
+    }
 }
 
 
-.nav-icons{
-    margin-top:auto;
-    display: flex;
-    justify-content: space-around;
-    /* padding-right: 5rem; */
-    /*Can you add padding between flex children?*/
-} 
+/* Large screens */
+@media only screen and (min-width: 600px){
+    .navbar{
+        top: 0;
+        width: 6rem;
+        height: 100vh;
+    }
+    
+    .navbar:hover{
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text{
+        display: inline;
+    }
+
+    .navbar:hover .nav-logo i{
+        /* transform: rotate(-180deg); */
+        display: none;
+    }
+
+    main{
+        margin-left: 6rem;
+    }
+}
 
 

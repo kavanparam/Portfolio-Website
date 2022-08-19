@@ -21,8 +21,7 @@
 
 
     /* Transitions */
-    --bg-transition: background-color .2s;
-    --color-transition: color .2s;
+    --link-transition: 200ms;
 }
 
 * {
@@ -110,7 +109,7 @@ summary:before{
 a:link, a:visited{
     text-decoration: none;
     color: var(--inactive-link);
-    transition: var(--color-transition);
+    transition: var(--link-transition);
 
 }
 

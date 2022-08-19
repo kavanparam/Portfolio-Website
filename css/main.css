@@ -1,10 +1,8 @@
 main{
-    margin-left: 10rem;
-    margin-right: 2rem;
+    padding: 2rem;
 }
 
 #main-grid-container{
-    padding-top: 10px;
     display: grid;
     /* grid-template-columns: 20% 80%; */
 
@@ -15,4 +13,3 @@ main{
 #software{
     /* grid-column-start: 2; */
 }
-
