@@ -1,3 +1,11 @@
+/* Create space bw grids & navbar 
+- Collapse the navbar and pin it to the bottom on smaller displays 
+- Use kp as logo until hovered, then expand and display kavanparam. Along with full sidebar contents.
+*/
+
+
+
+
 
 .nav-section{
     /* border: 1px solid red; */
@@ -12,51 +20,71 @@
     /* Testing if navtest can be removed and grid can be made around it */
     /* position: fixed;
     left: 65px; */
+
 }
 
 .navfix{
     /*Removed from the flow the document and had to specify position manually. 
     Not the best solution best serviceable */
+    
+    /* left: 60px; */
+    /* padding-left: 1rem; */
+}
+
+.navbar{
+    width: 10rem;
+    height: 100vh;
     position: fixed;
-    left: 60px;
+
+    background-color: hsla(260, 86%, 3%, 0.2);
+    /* padding-left: 1em; */
+    overflow: scroll;
 }
 
-.nav-logo h1{
-    color: rgba(255, 145, 0, 0.9);
-    font-weight: 500;
-    /* letter-spacing: -0.05em; */
-}
-
-.nav-logo > a{
-    text-decoration: none;
-}
-
-.nav-section ul{
+.navbar-nav{
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
-.nav-section li{
-    padding: 10px 0;
+.nav-logo > a > h1{
+    color: rgba(255, 145, 0, 0.9);
+    font-size: 1.6em;
+    font-weight: 400;
+    /* letter-spacing: -0.05em; */
+    margin: 0;
+    padding: 1rem 0;
 }
 
-
-nav ul li a:link, a:visited{
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
+.nav-item{
+    width: 100%;
 }
 
-nav ul li a:hover{
-    text-decoration: none;
-    /* color: white; */
-    color: rgba(255, 255, 255, 0.9);
+nav li{
+    padding: 1rem 0;
 }
+
+.nav-item:last-child{
+    margin-top: auto;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+
 
 .nav-icons{
+    margin-top:auto;
     display: flex;
-    justify-content: space-between;
-    padding-right: 5rem;
+    justify-content: space-around;
+    /* padding-right: 5rem; */
     /*Can you add padding between flex children?*/
 } 
 

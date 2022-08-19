@@ -1,5 +1,30 @@
 @import url("https://rsms.me/inter/inter.css");
 
+/* Defines global variables to be used throughout the entire website */
+:root{
+    font-size: 16px;
+
+
+    /* Text colors */
+    --slight-white: hsl(0, 0%, 80%);
+    --white-transparent: rgba(255, 255, 255, 0.8);
+
+    --gray-mode: #191919;
+    /* --light-mode:  */
+    --dark-mode: #05010d;
+
+    --inactive-link: hsl(0, 0%, 60%);
+    --hover-link: hsl(0, 0%, 90%);
+
+    /* Decrease margin for smaller viewports */
+    /* --margin-base:  */
+
+
+    /* Transitions */
+    --bg-transition: background-color .2s;
+    --color-transition: color .2s;
+}
+
 * {
     /* border: 1px solid coral; */
 }
@@ -7,8 +32,10 @@
 body{
     margin: 0;
     font-family: Inter, system-ui, 'Segoe UI', sans-serif;
-    background: #05010d;
+    /* New colour for testing */
+    background: var(--gray-mode);
     color: white;
+    color: var(--slight-white);
 
 
     line-height: 1.5;
@@ -16,9 +43,16 @@ body{
 
 }
 
-/* ol{
-    padding: 0;
-} */
+body::-webkit-scrollbar{
+    width: 0.35rem;
+}
+body::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0.2);
+}
+body::-webkit-scrollbar-thumb{
+    background: rgba(255, 145, 0, 0.5);
+}
+
 
 .default-padding{
     /*Padding removed in body, and reinserted as necessary*/
@@ -30,21 +64,22 @@ h1{
     font-size: 1.75em;
     font-weight: 300;
     /* color: grey; */
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--slight-white);
+
 }
 
 h2{
     display: inline-block;
     font-size: 1.25em;
     font-weight: 200;
-    color: hsl(0, 0%, 80%);
+    color: var(--slight-white);
 }   
 
 h3{
     display: inline-block;
     font-size: 1.25em;
-    font-weight: 500;
-    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    color: var(--slight-white);
 }
 
 h4{
@@ -63,7 +98,7 @@ details > summary{
 
 summary::marker{
     font-size: 0.8em;
-    color: hsl(0, 0%, 60%);
+    color: hsl(0, 0%, 65%);
 }
 
 
@@ -74,10 +109,12 @@ summary:before{
 
 a:link, a:visited{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--inactive-link);
+    transition: var(--color-transition);
+
 }
 
 a:hover{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--hover-link);
 }

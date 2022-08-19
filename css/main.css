@@ -1,24 +1,18 @@
+main{
+    margin-left: 10rem;
+    margin-right: 2rem;
+}
+
 #main-grid-container{
     padding-top: 10px;
-    padding-right: 60px;
     display: grid;
-    grid-template-columns: 20% 80%;
+    /* grid-template-columns: 20% 80%; */
 
     /* Contains photo & software portfolio */
     /* grid-template-rows: 1fr 1fr; */
 }
 
 #software{
-    grid-column-start: 2;
+    /* grid-column-start: 2; */
 }
-
-/* .main-grid-item{
-    background-color: whitesmoke;
-} */
-
-/*Why doesn't an ID work here? Is any other syntax possible?*/
-/* Not required after navbar removed from grid with position: fixed */
-/* .main-grid-item:nth-child(1){
-    justify-self: center;
-}  */
 
